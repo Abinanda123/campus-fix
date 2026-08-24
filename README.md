@@ -1,16 +1,74 @@
-# React + Vite
+# CampusFix
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+CampusFix is a campus issue-reporting and maintenance platform designed to help students report problems, track progress, and communicate with the teams responsible for resolving them.
 
-Currently, two official plugins are available:
+## Problem
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Campus maintenance requests are often scattered across messages, forms, and informal conversations. CampusFix provides a single workflow for reporting issues and keeping everyone informed.
 
-## React Compiler
+## Planned capabilities
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Submit maintenance requests with a category, description, location, and photo
+- Track request status from submission through resolution
+- Allow staff or administrators to assign and update requests
+- Notify students when a request changes status
+- Search and filter requests by category, location, and priority
+- Provide dashboards for recurring issues and resolution performance
 
-## Expanding the Oxlint configuration
+## Suggested workflow
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+Student submits issue
+        ↓
+Request is triaged and assigned
+        ↓
+Staff updates progress
+        ↓
+Student receives status updates
+        ↓
+Issue is resolved and closed
+```
+
+## Project status
+
+This repository is currently an initial React/Vite scaffold. Product features and the application architecture will be developed in subsequent iterations.
+
+## Development roadmap
+
+- [ ] Define user roles and permissions
+- [ ] Design the issue and status data model
+- [ ] Build the request submission flow
+- [ ] Add request tracking and status updates
+- [ ] Add staff and administrator workflows
+- [ ] Add notifications and analytics
+- [ ] Add tests and deployment documentation
+
+## Local development
+
+Requirements: Node.js 18 or later.
+
+```bash
+git clone https://github.com/Abinanda123/campus-fix.git
+cd campus-fix
+npm install
+npm run dev
+```
+
+Open the local Vite URL shown in the terminal.
+
+## Available scripts
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Check code quality |
+
+## Contributing
+
+Contributions and suggestions are welcome. Please open an issue to discuss a feature or bug before submitting a pull request.
+
+## License
+
+License information will be added when the project structure is established.
